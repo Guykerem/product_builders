@@ -1,0 +1,16 @@
+[
+  {
+    "topic": "What is a PRD",
+    "date": "2026-02-25",
+    "source": "research",
+    "file": "what-is-a-prd.md",
+    "tags": ["product-management", "documentation", "requirements", "prd"]
+  },
+  {
+    "topic": "How to Clone a Git Repo",
+    "date": "2026-02-25",
+    "source": "both",
+    "file": "how-to-clone-a-git-repo.md",
+    "tags": ["git", "github", "version-control", "getting-started"]
+  }
+]

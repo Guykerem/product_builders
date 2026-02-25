@@ -1,0 +1,23 @@
+{
+  "skill_name": "learn",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/learn what is a PRD",
+      "expected_output": "Should find that PRD concepts aren't deeply covered in context/, research online, create learnings/what-is-a-prd.md with proper frontmatter, update log.json, and offer to commit",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "/learn how to clone a git repo",
+      "expected_output": "Should find relevant info in context/00-getting-started.md (which covers git clone), synthesize from local context, create learnings/how-to-clone-a-git-repo.md with source: context, update log.json",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "/learn what are the best AI coding tools for product managers in 2026",
+      "expected_output": "Should partially match context (Cursor and Claude Code are mentioned), supplement with web research for broader landscape, create learning note with source: both, include practical recommendations",
+      "files": []
+    }
+  ]
+}

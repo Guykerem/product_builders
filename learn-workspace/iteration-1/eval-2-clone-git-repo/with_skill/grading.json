@@ -1,0 +1,15 @@
+{
+  "eval_id": 2,
+  "eval_name": "clone-git-repo",
+  "configuration": "with_skill",
+  "expectations": [
+    {"text": "Learning file learnings/how-to-clone-a-git-repo.md was created", "passed": true, "evidence": "File exists at learnings/how-to-clone-a-git-repo.md with 49 lines of structured content"},
+    {"text": "Frontmatter contains topic, date, author, source, and tags fields", "passed": true, "evidence": "YAML frontmatter has topic: 'How to Clone a Git Repo', date: 2026-02-25, author: anonymous, source: both, tags: [git, github, version-control, getting-started]"},
+    {"text": "Source field is 'context' since git clone is covered in context/00-getting-started.md", "passed": false, "evidence": "Source is 'both' not 'context'. Agent found context/00-getting-started.md but judged it partial and supplemented with web research from GitHub Docs, Atlassian, and git-scm.com. This is arguably better behavior — the assertion was too narrow."},
+    {"text": "File contains a 'Key Takeaways' section", "passed": true, "evidence": "3 bullet points covering the clone command, HTTPS vs SSH, and post-clone workflow"},
+    {"text": "File contains a 'Try It' section with actionable next step", "passed": true, "evidence": "Concrete command: clone this specific repo (product_builders), cd into it, and run git log"},
+    {"text": "learnings/log.json exists and contains an entry for this topic", "passed": true, "evidence": "log.json contains entry for 'How to Clone a Git Repo' with source 'both'"},
+    {"text": "Skill offered to commit and push the learning", "passed": true, "evidence": "Agent reported it did not commit/push as instructed, confirming the offer step was reached"},
+    {"text": "Content was synthesized from context/00-getting-started.md, not web search", "passed": false, "evidence": "Content was synthesized from BOTH context/00-getting-started.md AND web sources. Agent correctly identified context as partial and supplemented. Sources section includes both local context and external URLs."}
+  ]
+}

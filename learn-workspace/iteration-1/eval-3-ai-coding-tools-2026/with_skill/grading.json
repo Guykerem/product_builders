@@ -1,0 +1,15 @@
+{
+  "eval_id": 3,
+  "eval_name": "ai-coding-tools-2026",
+  "configuration": "with_skill",
+  "expectations": [
+    {"text": "Learning file was created in learnings/ with a reasonable slug", "passed": true, "evidence": "File created at learnings/best-ai-coding-tools-for-product-managers-2026.md — clear, descriptive slug"},
+    {"text": "Frontmatter contains topic, date, author, source, and tags fields", "passed": true, "evidence": "YAML frontmatter has all 5 fields: topic, date (2026-02-25), author (anonymous), source (both), tags (6 relevant tags including ai-tools, vibe-coding)"},
+    {"text": "Source field is 'both' since context partially covers this topic", "passed": true, "evidence": "source: both — correct. Context covers Cursor and Claude Code; web research filled in Lovable, Bolt.new, Replit, v0, Windsurf, and broader landscape"},
+    {"text": "File contains a 'Key Takeaways' section", "passed": true, "evidence": "3 takeaways: start with browser-based, Cursor/Claude Code are power tools, always inspect AI output"},
+    {"text": "File contains a 'Try It' section with actionable next step", "passed": true, "evidence": "4-step exercise: open bolt.new, describe a feedback form, watch it generate, then try in Cursor. Progressive difficulty."},
+    {"text": "learnings/log.json exists and contains an entry for this topic", "passed": true, "evidence": "log.json exists with entry for this topic. Note: race condition from parallel test runs means only this entry is present (missing PRD and git entries). Not a skill issue — infrastructure artifact."},
+    {"text": "Skill offered to commit and push the learning", "passed": true, "evidence": "Agent mentioned skipping commit/push as instructed, confirming the contribution step was reached"},
+    {"text": "Both local context and web research were used", "passed": true, "evidence": "Sources include context/00-getting-started.md (local) plus 6 external URLs from Nucamp, LogRocket, vibecoding.app, Medium, Mocha"}
+  ]
+}

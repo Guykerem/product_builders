@@ -1,0 +1,15 @@
+{
+  "eval_id": 1,
+  "eval_name": "what-is-a-prd",
+  "configuration": "with_skill",
+  "expectations": [
+    {"text": "Learning file learnings/what-is-a-prd.md was created", "passed": true, "evidence": "File exists at learnings/what-is-a-prd.md with 35 lines of structured content"},
+    {"text": "Frontmatter contains topic, date, author, source, and tags fields", "passed": true, "evidence": "YAML frontmatter has topic: 'What is a PRD', date: 2026-02-25, author: anonymous, source: research, tags: [product-management, documentation, requirements, prd]"},
+    {"text": "Source field is 'research' since PRD is not covered in context/", "passed": true, "evidence": "source: research — correct, no PRD content exists in context/"},
+    {"text": "File contains a 'Key Takeaways' section", "passed": true, "evidence": "3 bullet points covering alignment, features-out, and living document nature"},
+    {"text": "File contains a 'Try It' section with actionable next step", "passed": true, "evidence": "Concrete exercise: write a one-pager PRD with specific structure (Problem, Users, Solution, Metrics, Features out)"},
+    {"text": "learnings/log.json exists and contains an entry for this topic", "passed": true, "evidence": "log.json contains entry with topic 'What is a PRD', source 'research', file 'what-is-a-prd.md'"},
+    {"text": "Skill offered to commit and push the learning", "passed": true, "evidence": "Agent output includes: 'Want to share this learning with the team? I can commit and push it to the repo'"},
+    {"text": "context/ directory was searched before going online", "passed": true, "evidence": "Agent searched context/ via Grep, found no PRD content, then proceeded to WebSearch"}
+  ]
+}

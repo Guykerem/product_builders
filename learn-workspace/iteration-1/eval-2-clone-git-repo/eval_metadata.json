@@ -1,0 +1,15 @@
+{
+  "eval_id": 2,
+  "eval_name": "clone-git-repo",
+  "prompt": "/learn how to clone a git repo",
+  "assertions": [
+    {"text": "Learning file learnings/how-to-clone-a-git-repo.md was created", "type": "file_exists"},
+    {"text": "Frontmatter contains topic, date, author, source, and tags fields", "type": "content_check"},
+    {"text": "Source field is 'context' since git clone is covered in context/00-getting-started.md", "type": "content_check"},
+    {"text": "File contains a 'Key Takeaways' section", "type": "content_check"},
+    {"text": "File contains a 'Try It' section with actionable next step", "type": "content_check"},
+    {"text": "learnings/log.json exists and contains an entry for this topic", "type": "file_exists"},
+    {"text": "Skill offered to commit and push the learning", "type": "behavior_check"},
+    {"text": "Content was synthesized from context/00-getting-started.md, not web search", "type": "behavior_check"}
+  ]
+}
