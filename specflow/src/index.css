@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Light theme (default) */
   --color-midnight: #f8fafc;
   --color-deep: #ffffff;
   --color-surface: #e2e8f0;
@@ -13,6 +14,27 @@
   --color-amber: #d97706;
   --color-rose: #e11d48;
   --color-cyan: #0891b2;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  /* Dark theme overrides */
+  color-scheme: dark;
+  --color-midnight: #020617; /* page background */
+  --color-deep: #020617; /* header and card backgrounds */
+  --color-surface: #1f2937; /* borders, subtle surfaces */
+  --color-muted: #64748b; /* muted text on dark */
+  --color-soft: #cbd5f5; /* primary body text */
+  --color-bright: #e2e8f0; /* headings / bright text */
+  --color-accent: #6366f1;
+  --color-accent-bright: #818cf8;
+  --color-green: #22c55e;
+  --color-amber: #f59e0b;
+  --color-rose: #fb7185;
+  --color-cyan: #22d3ee;
 }
 
 body {
